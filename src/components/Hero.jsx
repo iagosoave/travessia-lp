@@ -38,15 +38,16 @@ const MetodoTravessiaHero = () => {
           {/* Left column - Text Content */}
           <div className="flex flex-col w-full items-start">
             {/* Main heading with gradient text */}
-            <h1 className="text-white text-5xl font-bold leading-tight mb-6 text-left w-full">
-              <span className="inline-block w-auto">Do autoconhecimento</span>
-              <span className="inline-block w-auto">à alta <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#AF8D4A] to-[#D4AF37]">performance</span></span>
+            <h1 className="text-white text-4xl font-bold leading-tight mb-6 text-left w-full">
+              <span className="inline-block w-auto">Travessia: Do Autoconhecimento</span>
+              <span className="inline-block w-auto">ao <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#AF8D4A] to-[#D4AF37]">Alto Desempenho</span></span>
             </h1>
             
             {/* Description with slightly transparent text */}
-            <p className="text-white/75 text-lg mb-8 max-w-xl leading-relaxed text-left w-full">
-              Destrave sua mente e alcance novos patamares em sua vida através das técnicas exclusivas da nossa mentoria.
-            </p>
+            <p className="text-white/75 text-base mb-8 max-w-xl leading-relaxed text-left w-full">
+            Transforme seu potencial: supere crenças limitantes e distrações. A Travessia é sua conexão para autoconhecimento e alta performance. Chegou a hora de decolar.
+
+</p>
             
             {/* CTA Button */}
             <div className="flex w-full justify-start">
@@ -150,15 +151,16 @@ const MetodoTravessiaHero = () => {
           {/* Text content with better mobile alignment */}
           <div className="flex flex-col w-full items-center mb-8">
             {/* Main heading with gradient text - Improved for mobile */}
-            <h1 className="text-white text-3xl md:text-4xl font-bold leading-tight mb-5 text-center w-full">
-              <span className="block mb-1">Do autoconhecimento</span>
-              <span className="block">à alta <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#AF8D4A] to-[#D4AF37]">performance</span></span>
+            <h1 className="text-white text-2xl md:text-3xl font-bold leading-tight mb-5 text-center w-full">
+              <span className="block mb-1">Travessia: Do Autoconhecimento</span>
+              <span className="block">ao <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#AF8D4A] to-[#D4AF37]">Alto Desempenho</span></span>
             </h1>
             
             {/* Description with better spacing and readability */}
-            <p className="text-white/75 text-base md:text-lg mb-6 max-w-md leading-relaxed text-center px-2">
-              Destrave sua mente e alcance novos patamares em sua vida através das técnicas exclusivas da nossa mentoria.
-            </p>
+            <p className="text-white/75 text-base md:text-base mb-6 max-w-md leading-relaxed text-center px-2">
+            Transforme seu potencial: supere crenças limitantes e distrações. A Travessia é sua conexão para autoconhecimento e alta performance. Chegou a hora de decolar.
+
+</p>
           </div>
           
           {/* Video optimized for mobile with better aspect ratio */}

@@ -2,13 +2,15 @@ import React, { useRef, useEffect, useState } from 'react';
 import { motion, useScroll, useTransform, useInView } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import antes from './antes.png';
-import depois from './depois.jpeg';
+import antes2 from './antes2.jpg';
+import depois from './depois.jpg';
+import depois2 from './depois2.jpg';
 
 const CristoferSection = () => {
   const sectionRef = useRef(null);
   const [isMobile, setIsMobile] = useState(false);
 
-    // Verificar se é dispositivo móvel e definir breakpoints adicionais
+  // Verificar se é dispositivo móvel e definir breakpoints adicionais
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
@@ -22,37 +24,37 @@ const CristoferSection = () => {
   const jornada = [
     {
       titulo: "O Ponto de Partida",
-      descricao: "Obesidade. Estagnação. Frustração constante. Este era Cristofer Leone, alguém com um potencial imenso preso em um corpo e uma mente que não respondiam mais ao seu comando.",
+      descricao: "Antes da Travessia, existia o peso. Não só o peso físico, mas o peso de uma história que parecia travada no mesmo ciclo. Cristofer Leone. Mais de 120kg, mais de 20 anos de tabagismo, mais de 12 tentativas frustradas de mudança.",
       imagem: antes,
       detalhes: [
         { label: "Peso", valor: "+120kg" },
         { label: "Tentativas", valor: "12+" },
-        { label: "Estado Mental", valor: "Bloqueado" }
+        { label: "Estado Mental", valor: "Estagnação" }
       ]
     },
     {
       titulo: "O Despertar",
-      descricao: "Foi quando tudo parecia perdido que Cristofer teve uma revelação: não era seu corpo que o limitava, mas sua mente. O corpo era apenas um reflexo de padrões mentais disfuncionais.",
-      imagem: antes,
+      descricao: "Foi quando tudo parecia perdido que a revelação veio. Cristofer acreditava que seu corpo era o vilão. Mas a verdade chegou: não era o corpo que o limitava — era a mente. O corpo era apenas o reflexo de um sistema interno desregulado.",
+      imagem: antes2,
       detalhes: [
         { label: "Insight", valor: "Reprogramação Mental" },
-        { label: "Momento Crucial", valor: "Ponto de Virada" }
+        { label: "Momento", valor: "Ponto de Virada" }
       ]
     },
     {
       titulo: "A Metodologia",
-      descricao: "Da necessidade nasceu o método. Cristofer desenvolveu um sistema passo a passo de reprogramação mental que permitiu quebrar ciclos negativos enraizados por anos.",
+      descricao: "Da dor nasceu o método. Cristofer entendeu que era preciso estruturar a mudança baseado em neurociência, metafísica, PNL e terapia cognitivo comportamental. Foi assim que nasceu o Método Travessia — com 4 pilares fundamentais.",
       imagem: null,
       detalhes: [
-        { label: "Sistema", valor: "Método Travessia" },
         { label: "Pilares", valor: "4 Fundamentais" },
+        { label: "Eixos", valor: "3 Grandes" },
         { label: "Abordagem", valor: "Integral" }
       ]
     },
     {
       titulo: "A Transformação Física",
-      descricao: "A mudança mental logo se refletiu no físico. 45kg eliminados em 12 meses. Não por dietas milagrosas, mas pela reconstrução completa da relação com seu corpo e mente.",
-      imagem: depois,
+      descricao: "Quando a mente se liberta, o corpo responde. Em 12 meses, Cristofer Leone eliminou 45kg. Mas o que ele perdeu vai além do peso. Ele perdeu o medo, o descontrole e a desconexão com o próprio corpo.",
+      imagem: depois2,
       detalhes: [
         { label: "Perda", valor: "-45kg" },
         { label: "Tempo", valor: "12 meses" },
@@ -61,17 +63,17 @@ const CristoferSection = () => {
     },
     {
       titulo: "O Sucesso Profissional",
-      descricao: "Com a mente reprogramada, as aprovações em concursos públicos federais que antes pareciam impossíveis começaram a se tornar realidade. Não uma, mas várias vezes consecutivas.",
+      descricao: "Quando a mente se alinha, o mundo responde. Com foco, clareza e uma identidade fortalecida, Cristofer Leone foi aprovado nos principais concursos de alto nível do país. Não era mais sobre passar em um concurso, era sobre passar por dentro de si mesmo.",
       imagem: null,
       detalhes: [
-        { label: "Aprovações", valor: "5+" },
-        { label: "Nível", valor: "Federal" },
-        { label: "Competitividade", valor: "Alta" }
+        { label: "Aprovações", valor: "Principais" },
+        { label: "Diferencial", valor: "Equilíbrio Interno" },
+        { label: "Resultado", valor: "Alinhamento" }
       ]
     },
     {
       titulo: "O Propósito",
-      descricao: "Hoje, centenas de pessoas já transformaram suas vidas usando o Método Travessia. A jornada de Cristofer agora é compartilhada, multiplicando transformações por todo o Brasil.",
+      descricao: "A Travessia começou com um homem em crise. Hoje, ecoa em centenas de vidas transformadas. Mais de 500 pessoas em todo o Brasil já passaram pelo Método Travessia, encontrando um novo caminho para viver com verdade, potência e direção.",
       imagem: depois,
       detalhes: [
         { label: "Impacto", valor: "500+ Vidas" },
@@ -211,10 +213,10 @@ const StorySection = ({ etapa, index, isEven, isMobile, isLast }) => {
           
           <div className="grid grid-cols-2 gap-3">
             {[
-              { icon: "🧠", label: "Mente" },
-              { icon: "⏱️", label: "Foco" },
-              { icon: "🔄", label: "Hábitos" },
-              { icon: "⚡", label: "Energia" }
+              { icon: "🧠", label: "Desbloqueio de identidade" },
+              { icon: "🎯", label: "Desenvolvimento de habilidades" },
+              { icon: "🔥", label: "Gestão emocional" },
+              { icon: "⚡", label: "Reprogramação mental" }
             ].map((pilar, idx) => (
               <motion.div
                 key={idx}
@@ -224,7 +226,7 @@ const StorySection = ({ etapa, index, isEven, isMobile, isLast }) => {
                 transition={{ duration: 0.3, delay: 0.1 + (idx * 0.1) }}
               >
                 <span className="text-3xl mb-2 block">{pilar.icon}</span>
-                <span className="text-white font-medium text-sm md:text-base">{pilar.label}</span>
+                <span className="text-white font-medium text-xs md:text-sm">{pilar.label}</span>
               </motion.div>
             ))}
           </div>
@@ -241,14 +243,14 @@ const StorySection = ({ etapa, index, isEven, isMobile, isLast }) => {
             transition={{ duration: 0.4 }}
             className="mb-4 text-center"
           >
-            <span className="block text-5xl md:text-6xl font-bold text-[#AF8D4A]">5+</span>
-            <p className="text-lg md:text-xl mt-1 text-white">Aprovações</p>
+            <span className="block text-5xl md:text-6xl font-bold text-[#AF8D4A]">Sucesso</span>
+            <p className="text-lg md:text-xl mt-1 text-white">Além do Profissional</p>
           </motion.div>
           
           <div className="grid grid-cols-3 gap-2">
             {[
-              "Federal", "Estadual", "Alta Competição", 
-              "Primeiro", "Segundos", "Consecutivos"
+              "Competitivo", "Clareza", "Foco", 
+              "Equilíbrio", "Maturidade", "Alinhamento"
             ].map((tag, idx) => (
               <motion.div
                 key={idx}
@@ -266,6 +268,39 @@ const StorySection = ({ etapa, index, isEven, isMobile, isLast }) => {
     }
     
     return null;
+  };
+
+  // Função específica para renderizar a imagem do último slide corretamente
+  const renderPropostoImage = () => {
+    if (index === 5) {
+      return (
+        <div className="w-full max-w-sm mx-auto overflow-hidden flex items-center justify-center bg-black">
+          <div className="w-full">
+            {/* Usa uma div com background-image para maior controle de posicionamento */}
+            <div 
+              className="relative w-full h-[280px] bg-center bg-no-repeat bg-cover rounded-xl shadow-xl border border-[#AF8D4A]/20"
+              style={{
+                backgroundImage: `url(${etapa.imagem})`,
+                backgroundPosition: "center 10%", // Ajuste para focar no rosto
+              }}
+            ></div>
+          </div>
+        </div>
+      );
+    } else {
+      return (
+        <div className="relative w-full max-w-sm mx-auto">
+          <div className="absolute -inset-1 bg-gradient-to-r from-[#AF8D4A]/30 to-transparent rounded-xl blur-md"></div>
+          <div className="relative z-10 w-full h-[260px] rounded-xl shadow-xl border border-[#AF8D4A]/20 overflow-hidden">
+            <img 
+              src={etapa.imagem}
+              alt={etapa.titulo}
+              className="w-full h-full object-cover object-center"
+            />
+          </div>
+        </div>
+      );
+    }
   };
 
   return (
@@ -286,14 +321,7 @@ const StorySection = ({ etapa, index, isEven, isMobile, isLast }) => {
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               {etapa.imagem ? (
-                <div className="relative w-full max-w-sm mx-auto">
-                  <div className="absolute -inset-1 bg-gradient-to-r from-[#AF8D4A]/30 to-transparent rounded-xl blur-md"></div>
-                  <img 
-                    src={etapa.imagem}
-                    alt={etapa.titulo}
-                    className="relative z-10 w-full h-auto max-h-[260px] rounded-xl shadow-xl border border-[#AF8D4A]/20 object-cover mx-auto"
-                  />
-                </div>
+                renderPropostoImage()
               ) : (
                 <div className="w-full max-w-sm mx-auto bg-black/50 backdrop-blur-sm border border-[#AF8D4A]/20 rounded-xl p-4 shadow-xl">
                   {renderSpecialContent()}

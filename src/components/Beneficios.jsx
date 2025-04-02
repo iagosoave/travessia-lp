@@ -6,33 +6,33 @@ const BeneficiosSection = () => {
   const benefitsData = [
     {
       icon: <Brain size={32} />,
-      title: "Reprogramação Mental",
-      description: "Elimine crenças limitantes e desenvolva uma mentalidade de sucesso absoluto que impulsiona resultados extraordinários."
+      title: "Escala 1 - Reprogramação Mental",
+      description: "Elimine crenças limitantes e desenvolva uma mentalidade de sucesso. Você não é seu passado nem seus erros - é o piloto dessa jornada e pode redefinir sua rota agora para impulsionar resultados extraordinários."
     },
     {
       icon: <Target size={32} />,
-      title: "Foco Inabalável",
-      description: "Desenvolva técnicas avançadas para manter o foco em seus objetivos, mesmo em ambientes de alta pressão e distração."
+      title: "Escala 2 – Foco Inabalável",
+      description: "Desenvolva técnicas avançadas para manter o foco em seus objetivos, mesmo em ambientes de alta pressão. O que separa pessoas comuns de grandes realizadores não é talento, é foco - e isso pode ser treinado."
     },
     {
       icon: <TrendingUp size={32} />,
-      title: "Produtividade Exponencial",
-      description: "Aprenda sistemas comprovados para multiplicar sua produtividade e conquistar mais resultados em menos tempo."
+      title: "Escala 3 – Produtividade Exponencial",
+      description: "Aprenda técnicas comprovadas para multiplicar sua produtividade e conquistar mais resultados em menos tempo, como se o seu tempo fosse um avião voando em linha reta para seus objetivos."
     },
     {
       icon: <Award size={32} />,
-      title: "Resultados Garantidos",
-      description: "Aplicando a mesma metodologia que levou Cristofer à aprovação em múltiplos concursos públicos de alta competitividade."
+      title: "Escala 4 – Resultados Garantidos",
+      description: "Aplique a metodologia que levou Cristofer à aprovação em múltiplos concursos de alta competitividade. Não basta apenas querer ou planejar - o segredo está na execução consistente."
     },
     {
       icon: <Dumbbell size={32} />,
-      title: "Transformação Completa",
-      description: "Transformação integral do corpo e mente, seguindo o mesmo processo que permitiu a Cristofer superar a obesidade."
+      title: "Escala 5 – Transformação Completa",
+      description: "Transforme integralmente corpo e mente seguindo o mesmo processo que permitiu a Cristofer superar a obesidade. A pessoa que inicia essa jornada torna-se irreconhecível - uma versão mais forte e determinada."
     },
     {
       icon: <Zap size={32} />,
-      title: "Alta Performance",
-      description: "Desenvolva o mindset e os hábitos dos indivíduos de maior desempenho do mundo para resultados consistentes."
+      title: "Escala 6 – Alto Desempenho",
+      description: "Desenvolva a mentalidade e os hábitos dos indivíduos de maior performance do mundo. O que parecia um destino distante se tornará seu ponto de partida, pois quem passa pela Travessia não aceita mais viver no piloto automático."
     }
   ];
 
