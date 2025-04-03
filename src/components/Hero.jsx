@@ -69,7 +69,7 @@ const MetodoTravessiaHero = () => {
             <div className="relative aspect-video bg-black/80 rounded-lg overflow-hidden shadow-[0_0_30px_rgba(175,141,74,0.2)] border border-[#AF8D4A]/10">
               <iframe
                 className="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/ISWPjlt6hes?rel=0&showinfo=0"
+                src="https://www.youtube.com/embed/B-x6AOin5do?rel=0&showinfo=0&autoplay=1&mute=1"
                 title="Método Travessia"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -174,7 +174,7 @@ const MetodoTravessiaHero = () => {
             <div className="relative aspect-video bg-black/80 rounded-lg overflow-hidden shadow-[0_0_20px_rgba(175,141,74,0.2)] border border-[#AF8D4A]/10">
               <iframe
                 className="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/ISWPjlt6hes?rel=0&showinfo=0"
+                src="https://www.youtube.com/embed/B-x6AOin5do?rel=0&showinfo=0&autoplay=1&mute=1"
                 title="Método Travessia"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
